@@ -1,0 +1,10 @@
+uuid: 9699daca-f68c-4816-a416-4a113d2f193a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.token
+label: Token
+targetEntityType: block_content
+cache: true

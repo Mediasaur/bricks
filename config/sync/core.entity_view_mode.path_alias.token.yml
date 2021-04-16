@@ -1,0 +1,10 @@
+uuid: a243f36a-4a53-48b2-a612-fcf1f0c35742
+langcode: en
+status: true
+dependencies:
+  module:
+    - path_alias
+id: path_alias.token
+label: Token
+targetEntityType: path_alias
+cache: true
