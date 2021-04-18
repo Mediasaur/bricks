@@ -4,3 +4,36 @@
  * @file
  * Functions to support theming in the MACC theme.
  */
+
+
+
+ /**
+ * >> REGION PREPROCESS: Implements hook_preprocess_region().
+ */
+
+function bricks_preprocess_region(&$variables) {
+  
+  // To be able to print blocks in Twig:
+  // Main Menu block:
+  $block = \Drupal\block\Entity\Block::load('bricks_main_menu');
+  $variables['bricks_main_menu'] = \Drupal::entityTypeManager()
+    ->getViewBuilder('block')
+    ->view($block);
+
+}
+
+function bricks_preprocess_page(array &$variables) {
+
+  // Show footer region even no blocks enabled.
+  if (is_array($variables['page']['footer']) && count($variables['page']['footer']) < 1) {
+    $variables['page']['footer'] = [
+    '#theme_wrappers' => ['region'],
+    '#region' => 'footer',
+    'empty_block' => [
+    '#markup' => '',
+    '#weight' => "-100",
+    ],
+    ];
+  }
+
+}

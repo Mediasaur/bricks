@@ -1,0 +1,44 @@
+header {
+  background: $red-gradient;
+  padding: 15px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bricks-logo {
+  width: 100px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  &:hover {
+    scale: 1.15;
+  }
+}
+
+#block-bricks-main-menu ul {
+  display: flex;
+  list-style: none;
+  li {
+    margin-left: 40px;
+  }
+  li:first-child {
+    margin-left: 0;
+  }
+  a {
+    color: $white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.85;
+    display: inline-block;
+    &:hover {
+      color: $black;
+      opacity: 0.5;
+    }
+  }
+}

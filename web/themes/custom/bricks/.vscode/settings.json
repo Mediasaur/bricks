@@ -19,5 +19,13 @@
   "liveSassCompile.settings.autoprefix": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+
+  // Browser Sync eklentisini konfigüre edip her seferinde command line'dan ayarlamamya çalıştım ama başaramadım. Kaynak: https://marketplace.visualstudio.com/items?itemName=jasonlhy.vscode-browser-sync
+  // "browserSync.config" : {
+  //   "host": "https://bricks-project.lndo.site",
+  //   "proxy": "localhost:8888",
+  //   "files": ["css/*.css", "js/*.js"]
+  // }    
+  
 }
