@@ -1,0 +1,20 @@
+uuid: 4d6a359c-1bce-4722-83db-dc31f5e4ee6f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bricks
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bricks_local_actions
+theme: bricks
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

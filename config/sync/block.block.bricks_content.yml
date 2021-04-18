@@ -1,0 +1,22 @@
+uuid: 073725f6-7757-407b-9c1e-a8e98a7bb482
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bricks
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: bricks_content
+theme: bricks
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

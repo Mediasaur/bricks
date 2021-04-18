@@ -1,0 +1,21 @@
+name: 'Bricks'
+type: theme
+description: 'Bricks Project custom theme.'
+core_version_requirement: ^8 || ^9
+base theme: false
+
+regions:
+  header: Header
+  banner: Banner
+  help: Help
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  footer: Footer
+  page_top: Page Top
+  page_bottom: Page Bottom
+
+libraries:
+  - bricks/global-styling
+  - bricks/global-scripts
+
