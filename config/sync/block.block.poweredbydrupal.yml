@@ -1,4 +1,4 @@
-uuid: b272d89a-fc72-4d72-b793-0d677c506c2b
+uuid: 7cc9bf92-f5c4-4781-8610-b0bd702c7783
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - bricks
-_core:
-  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
-id: bricks_powered
+id: poweredbydrupal
 theme: bricks
 region: header
-weight: 10
+weight: 0
 provider: null
 plugin: system_powered_by_block
 settings:
