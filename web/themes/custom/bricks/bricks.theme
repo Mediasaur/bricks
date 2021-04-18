@@ -24,6 +24,18 @@ function bricks_preprocess_region(&$variables) {
 
 function bricks_preprocess_page(array &$variables) {
 
+  // Show header region even no blocks enabled.
+  if (is_array($variables['page']['header']) && count($variables['page']['header']) < 1) {
+    $variables['page']['header'] = [
+    '#theme_wrappers' => ['region'],
+    '#region' => 'header',
+    'empty_block' => [
+    '#markup' => '',
+    '#weight' => "-100",
+    ],
+    ];
+  }
+
   // Show footer region even no blocks enabled.
   if (is_array($variables['page']['footer']) && count($variables['page']['footer']) < 1) {
     $variables['page']['footer'] = [
