@@ -1,0 +1,34 @@
+uuid: b5382a75-7e8c-4e18-8f7a-6112ee29dbf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.brick_photo.field_brick_artist
+    - field.field.media.brick_photo.field_brick_title
+    - field.field.media.brick_photo.field_media_image
+    - image.style.medium
+    - media.type.brick_photo
+  module:
+    - image
+id: media.brick_photo.media_library
+targetEntityType: media
+bundle: brick_photo
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_brick_artist: true
+  field_brick_title: true
+  field_media_image: true
+  name: true
+  uid: true

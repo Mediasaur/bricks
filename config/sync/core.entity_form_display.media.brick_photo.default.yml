@@ -1,0 +1,73 @@
+uuid: a8445ce9-4286-4875-b407-d2103b046472
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.brick_photo.field_brick_artist
+    - field.field.media.brick_photo.field_brick_title
+    - field.field.media.brick_photo.field_media_image
+    - image.style.thumbnail
+    - media.type.brick_photo
+  module:
+    - image
+    - path
+id: media.brick_photo.default
+targetEntityType: media
+bundle: brick_photo
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_brick_artist:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_brick_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  name: true

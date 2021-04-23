@@ -1,0 +1,29 @@
+uuid: aa45ae60-8172-466b-9bce-0edccefdbe2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_type
+    - node.type.brick_project
+    - taxonomy.vocabulary.project_type
+id: node.brick_project.field_project_type
+field_name: field_project_type
+entity_type: node
+bundle: brick_project
+label: 'Project Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      project_type: project_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

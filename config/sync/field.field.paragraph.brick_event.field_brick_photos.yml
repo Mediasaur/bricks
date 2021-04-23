@@ -1,0 +1,29 @@
+uuid: 374ab9db-8ba8-4709-971b-11418005a9ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_brick_photos
+    - media.type.brick_photo
+    - paragraphs.paragraphs_type.brick_event
+id: paragraph.brick_event.field_brick_photos
+field_name: field_brick_photos
+entity_type: paragraph
+bundle: brick_event
+label: 'Brick Photos'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      brick_photo: brick_photo
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

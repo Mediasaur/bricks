@@ -1,0 +1,19 @@
+uuid: a2149d8a-55e8-4902-a47a-ba86dc3a21e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_brick_artist
+    - media.type.brick_photo
+id: media.brick_photo.field_brick_artist
+field_name: field_brick_artist
+entity_type: media
+bundle: brick_photo
+label: 'Brick Artist'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: a230eebe-d0e3-4048-999a-dadbb9d68e9f
+langcode: en
+status: true
+dependencies: {  }
+id: brick_event
+label: 'Brick Event'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

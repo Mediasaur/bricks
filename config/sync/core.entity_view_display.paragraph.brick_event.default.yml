@@ -1,0 +1,34 @@
+uuid: fbfbc52a-5955-4504-bbb0-a841a819ab14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.brick_event.field_brick_event_date
+    - field.field.paragraph.brick_event.field_brick_photos
+    - paragraphs.paragraphs_type.brick_event
+  module:
+    - datetime
+id: paragraph.brick_event.default
+targetEntityType: paragraph
+bundle: brick_event
+mode: default
+content:
+  field_brick_event_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_brick_photos:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

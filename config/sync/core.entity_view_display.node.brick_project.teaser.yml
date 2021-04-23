@@ -1,0 +1,34 @@
+uuid: 09758423-6933-4235-9456-18a2a0264111
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.brick_project.field_brick_events
+    - field.field.node.brick_project.field_project_description
+    - field.field.node.brick_project.field_project_end_date
+    - field.field.node.brick_project.field_project_location
+    - field.field.node.brick_project.field_project_slideshow
+    - field.field.node.brick_project.field_project_start_date
+    - field.field.node.brick_project.field_project_type
+    - node.type.brick_project
+  module:
+    - user
+id: node.brick_project.teaser
+targetEntityType: node
+bundle: brick_project
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_brick_events: true
+  field_project_description: true
+  field_project_end_date: true
+  field_project_location: true
+  field_project_slideshow: true
+  field_project_start_date: true
+  field_project_type: true

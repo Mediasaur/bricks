@@ -1,0 +1,19 @@
+uuid: f362a72e-d9b0-493d-b32c-0958187cf6c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_brick_title
+    - media.type.brick_photo
+id: media.brick_photo.field_brick_title
+field_name: field_brick_title
+entity_type: media
+bundle: brick_photo
+label: 'Brick Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

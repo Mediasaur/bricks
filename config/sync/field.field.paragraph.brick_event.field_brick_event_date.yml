@@ -1,0 +1,21 @@
+uuid: c9a2e8e5-0577-4c70-806d-a8b392cf641e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_brick_event_date
+    - paragraphs.paragraphs_type.brick_event
+  module:
+    - datetime
+id: paragraph.brick_event.field_brick_event_date
+field_name: field_brick_event_date
+entity_type: paragraph
+bundle: brick_event
+label: 'Brick Event Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,88 @@
+uuid: 6690ef73-ba5e-4dc0-a15e-325e9cba97a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.brick_project.field_brick_events
+    - field.field.node.brick_project.field_project_description
+    - field.field.node.brick_project.field_project_end_date
+    - field.field.node.brick_project.field_project_location
+    - field.field.node.brick_project.field_project_slideshow
+    - field.field.node.brick_project.field_project_start_date
+    - field.field.node.brick_project.field_project_type
+    - node.type.brick_project
+  module:
+    - datetime
+    - entity_reference_revisions
+    - text
+    - user
+id: node.brick_project.default
+targetEntityType: node
+bundle: brick_project
+mode: default
+content:
+  field_brick_events:
+    type: entity_reference_revisions_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_project_description:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_project_end_date:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_project_location:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_project_slideshow:
+    type: entity_reference_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_project_start_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_project_type:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
