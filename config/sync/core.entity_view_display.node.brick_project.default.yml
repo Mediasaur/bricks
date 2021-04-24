@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.brick_project.field_brick_events
+    - field.field.node.brick_project.field_project_content
     - field.field.node.brick_project.field_project_description
     - field.field.node.brick_project.field_project_end_date
     - field.field.node.brick_project.field_project_location
@@ -14,6 +15,7 @@ dependencies:
   module:
     - datetime
     - entity_reference_revisions
+    - layout_paragraphs
     - text
     - user
 id: node.brick_project.default
@@ -24,6 +26,15 @@ content:
   field_brick_events:
     type: entity_reference_revisions_entity_view
     weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_project_content:
+    type: layout_paragraphs
+    weight: 108
     label: above
     settings:
       view_mode: default
@@ -74,7 +85,7 @@ content:
     region: content
   field_project_type:
     weight: 101
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -82,7 +93,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

@@ -6,5 +6,5 @@ id: brick_event
 label: 'Brick Event'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'To create daily brick event content.'
 behavior_plugins: {  }
