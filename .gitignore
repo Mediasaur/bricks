@@ -25,7 +25,7 @@ web/profiles
 !web/themes/
 web/themes/*
 !web/themes/custom/
-
+web/themes/custom/bricks/.vscode/settings.json
 # Ignore configuration files that may contain sensitive information.
 web/sites/settings.*.php
 web/sites/*/settings*.php

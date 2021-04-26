@@ -4,11 +4,6 @@
       "format": "expanded",
       "extensionName": ".css",
       "savePath": "/css"
-    },
-    {
-      "extensionName": ".min.css",
-      "format": "compressed",
-      "savePath": "/dist/css"
     }
   ],
   "liveSassCompile.settings.excludeList": [
@@ -26,6 +21,6 @@
   //   "host": "https://bricks-project.lndo.site",
   //   "proxy": "localhost:8888",
   //   "files": ["css/*.css", "js/*.js"]
-  // }    
-  
+  // }
+
 }
