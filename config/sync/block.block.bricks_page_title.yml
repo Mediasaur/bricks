@@ -1,6 +1,6 @@
 uuid: 1300e311-0716-4053-a469-5c60e8105b00
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - bricks

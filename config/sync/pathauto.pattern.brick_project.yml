@@ -1,0 +1,22 @@
+uuid: 99a196cb-7411-4f4a-b0b7-49c7dbf25438
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: brick_project
+label: 'Brick Project'
+type: 'canonical_entities:node'
+pattern: 'projects/[node:title]'
+selection_criteria:
+  3a4da39f-6a93-4c1b-978d-23ad3378073e:
+    id: node_type
+    bundles:
+      brick_project: brick_project
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3a4da39f-6a93-4c1b-978d-23ad3378073e
+selection_logic: and
+weight: -5
+relationships: {  }

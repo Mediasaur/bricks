@@ -1,11 +1,23 @@
 <div class="layout-container">
   {{ page.header }}
-  {{ page.breadcrumb }}
-  {{ page.highlighted }}
-  {{ page.help }}
+  <div class="page-info">
+    <div class="uk-container">
+      <div class="uk-grid">
+        <div class="breadcrumb uk-width-1-2">{{ page.breadcrumb }}</div>
+        <div class="page-title uk-width-1-2"><h1>{{ node.title.value }}</h1></div>
+      </div>
+    </div>
+  </div>
+   {# {{ kint(page) }} #}
+   
+    
+    {{ page.highlighted }}
+    {{ page.help }}
+  
+  
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-    <div class="layout-content">
+    <div class="layout-content uk-container">
       {{ page.content }}
     </div>{# /.layout-content #}
   </main>

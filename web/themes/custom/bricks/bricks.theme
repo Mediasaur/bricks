@@ -22,6 +22,16 @@ function bricks_preprocess_region(&$variables) {
 
 }
 
+/**
+ * << REGION PREPROCESS: Implements hook_preprocess_region().
+ */
+
+
+
+/**
+ * >> PAGE PREPROCESS: Implements hook_preprocess_page().
+ */
+
 function bricks_preprocess_page(array &$variables) {
 
   // Show header region even no blocks enabled.
@@ -49,3 +59,32 @@ function bricks_preprocess_page(array &$variables) {
   }
 
 }
+
+/**
+ * << PAGE PREPROCESS: Implements hook_preprocess_page().
+ */
+
+
+
+/**
+ * >> BLOCK BREADCRUMB: Implements hook_preprocess_breadcrumb().
+ */
+
+function bricks_preprocess_breadcrumb(&$variables){
+ 
+  //$content_type = $node->bundle();
+  if(($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']){
+    // Remove 'Home' from breadcrumb:
+    array_shift($variables['breadcrumb']);
+    // Get content type to use breadcrumb.html.twig:
+    $variables['content_type'] = $node->bundle();
+    // Show node title in breadcrumb:
+    $variables['breadcrumb'][] = array(
+     'text' => $node->getTitle()
+   );
+  }
+}
+
+/**
+ * << BLOCK BREADCRUMB: Implements hook_preprocess_breadcrumb().
+ */
