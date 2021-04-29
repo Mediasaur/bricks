@@ -6,11 +6,11 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.brick_project.field_brick_events
     - field.field.node.brick_project.field_project_content
+    - field.field.node.brick_project.field_project_date
     - field.field.node.brick_project.field_project_description
-    - field.field.node.brick_project.field_project_end_date
     - field.field.node.brick_project.field_project_location
     - field.field.node.brick_project.field_project_slideshow
-    - field.field.node.brick_project.field_project_start_date
+    - field.field.node.brick_project.field_project_subtitle
     - field.field.node.brick_project.field_project_type
     - node.type.brick_project
   module:
@@ -28,9 +28,9 @@ content:
 hidden:
   field_brick_events: true
   field_project_content: true
+  field_project_date: true
   field_project_description: true
-  field_project_end_date: true
   field_project_location: true
   field_project_slideshow: true
-  field_project_start_date: true
+  field_project_subtitle: true
   field_project_type: true

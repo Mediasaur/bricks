@@ -1,0 +1,19 @@
+uuid: a8499ea4-3cf8-4560-bc7c-104427b820de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_subtitle
+    - node.type.brick_project
+id: node.brick_project.field_project_subtitle
+field_name: field_project_subtitle
+entity_type: node
+bundle: brick_project
+label: 'Project Subtitle'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

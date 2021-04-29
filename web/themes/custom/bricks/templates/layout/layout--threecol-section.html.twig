@@ -1,0 +1,23 @@
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+
+    {% if content.first %}
+      <div {{ region_attributes.first.addClass('layout-region', 'layout-region-first') }}>
+        {{ content.first }}
+      </div>
+    {% endif %}
+
+    {% if content.second %}
+      <div {{ region_attributes.second.addClass('layout-region', 'layout-region-second') }}>
+        {{ content.second }}
+      </div>
+    {% endif %}
+
+    {% if content.third %}
+      <div {{ region_attributes.third.addClass('layout-region', 'layout-region-third') }}>
+        {{ content.third }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}

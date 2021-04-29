@@ -1,0 +1,25 @@
+<article{{ attributes }}>
+  {{ kint(node) }}
+  <section class="section-project-header">
+    <div class="uk-container">
+      <div class="project-header">
+        <div class="project-info">
+          <div class="project-info-subtitle">{{ node.field_project_subtitle.value }}</div>
+          <div class="project-info-location">{{ node.field_project_location.value }}</div>
+          <div class="project-info-date">{{ node.field_project_date.value }}</div>
+        </div>
+        <div class="project-slider">{{ content.field_project_slideshow }}</div>
+        <div class="project-description">{{ content.field_project_description }}</div>
+      </div>
+    </div>
+  </section>
+  <section class="section-brick-events">
+    {{ content.field_brick_events }}
+  </section>
+  <section class="section-project-content">
+    <div class="uk-container">
+      {{ content.field_project_content }}
+    </div>
+  </section>
+  {# {{ content }} #}
+</article>

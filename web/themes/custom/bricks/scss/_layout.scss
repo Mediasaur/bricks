@@ -1,3 +1,11 @@
 main {
-  margin-bottom: 75px;
+  margin-bottom: 7.5rem;
+}
+
+.layout--threecol-section--33-34-33 .layout-region {
+  flex: 32%;
+}
+
+.layout--threecol-section--33-34-33 .layout-region-second {
+  margin: 0 2%;
 }

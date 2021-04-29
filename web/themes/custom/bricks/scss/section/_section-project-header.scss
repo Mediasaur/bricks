@@ -1,0 +1,39 @@
+.section-project-header {
+  background: $gray-2;
+  padding: 2rem 0;
+}
+
+.project-header {
+  display: flex;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+}
+
+.project-info-subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray-4;
+}
+
+.project-info-location {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.project-slider {
+  margin: 0 5%;
+  width: 40%;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  text-align: justify;
+}

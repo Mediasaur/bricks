@@ -5,15 +5,14 @@ dependencies:
   config:
     - field.field.node.brick_project.field_brick_events
     - field.field.node.brick_project.field_project_content
+    - field.field.node.brick_project.field_project_date
     - field.field.node.brick_project.field_project_description
-    - field.field.node.brick_project.field_project_end_date
     - field.field.node.brick_project.field_project_location
     - field.field.node.brick_project.field_project_slideshow
-    - field.field.node.brick_project.field_project_start_date
+    - field.field.node.brick_project.field_project_subtitle
     - field.field.node.brick_project.field_project_type
     - node.type.brick_project
   module:
-    - datetime
     - entity_reference_revisions
     - layout_paragraphs
     - text
@@ -25,8 +24,8 @@ mode: default
 content:
   field_brick_events:
     type: entity_reference_revisions_entity_view
-    weight: 107
-    label: above
+    weight: 7
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -34,32 +33,31 @@ content:
     region: content
   field_project_content:
     type: layout_paragraphs
-    weight: 108
-    label: above
+    weight: 8
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
+  field_project_date:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_project_description:
-    weight: 106
-    label: above
+    weight: 6
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_project_end_date:
-    weight: 104
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_project_location:
-    weight: 102
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -67,24 +65,23 @@ content:
     region: content
   field_project_slideshow:
     type: entity_reference_entity_view
-    weight: 105
-    label: above
+    weight: 5
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
-  field_project_start_date:
-    weight: 103
-    label: above
+  field_project_subtitle:
+    weight: 0
+    label: hidden
     settings:
-      format_type: medium
-      timezone_override: ''
+      link_to_entity: false
     third_party_settings: {  }
-    type: datetime_default
+    type: string
     region: content
   field_project_type:
-    weight: 101
+    weight: 2
     label: hidden
     settings:
       link: true
@@ -92,7 +89,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,19 @@
+uuid: 482aa099-0ba3-4f5e-bcef-23ba8b617d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_date
+    - node.type.brick_project
+id: node.brick_project.field_project_date
+field_name: field_project_date
+entity_type: node
+bundle: brick_project
+label: 'Project Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,4 +1,4 @@
-.page-info {
+.section-page-title {
   background: #1f1f1f;
   padding: 2rem 0;
 }
@@ -6,8 +6,6 @@
 .breadcrumb {
   display: flex;
   align-items: center;
-}
-#block-bricks-breadcrumbs {
   ul {
     list-style: none;
     display: flex;
@@ -16,7 +14,7 @@
       font-weight: 600;
       line-height: 1;
       a {
-        color: $dark-gray;
+        color: $gray-4;
         &:hover {
           color: $dark-red;
         }
@@ -26,7 +24,7 @@
         width: 1.4rem;
         margin: 0 0.5rem;
         polyline {
-          stroke: $dark-gray;
+          stroke: $gray-4;
           stroke-width: 2;
         }
       }

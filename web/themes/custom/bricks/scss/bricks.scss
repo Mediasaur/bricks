@@ -14,7 +14,7 @@ html {
 body {
   background: $black;
   margin: 0;
-  color: $light-gray;
+  color: $gray-8;
   font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 500;
@@ -23,7 +23,7 @@ body {
 h1 {
 	padding-right: 10px;
 	border-right: 6px solid #c00;
-  color: $light-gray;
+  color: $gray-8;
   font-family: Montserrat;
 	font-size: 32px;
 	line-height: 48px;
@@ -41,6 +41,11 @@ a {
   }
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 ol, ul {
   margin: 0;
   padding: 0;
@@ -48,4 +53,6 @@ ol, ul {
 
 @import "region/header";
 @import "region/footer";
-@import "components/page-info";
+@import "section/section-page-title";
+@import "section/section-project-header";
+@import "section/section-project-content";

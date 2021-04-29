@@ -1,0 +1,10 @@
+<div uk-slideshow="autoplay: false; autoplay-interval: 2500; ratio: 4:3">
+  <ul class="uk-slideshow-items">
+    {% for item in items %}
+    <li>{{ item.content }}</li>
+    {% endfor %}
+  </ul>
+  {# <ul class="uk-slideshow-nav uk-dotnav"></ul>
+  <a class="uk-position-center-left" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+  <a class="uk-position-center-right" href="#" uk-slidenav-next uk-slideshow-item="next"></a> #}
+</div>
