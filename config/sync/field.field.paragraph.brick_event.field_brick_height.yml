@@ -1,0 +1,21 @@
+uuid: e412df93-bc00-4129-9766-7a6720c816cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_brick_height
+    - paragraphs.paragraphs_type.brick_event
+id: paragraph.brick_event.field_brick_height
+field_name: field_brick_height
+entity_type: paragraph
+bundle: brick_event
+label: 'Brick Height'
+description: 'Desired brick height as pixels. Only enter number without px etc.'
+required: false
+translatable: false
+default_value:
+  -
+    value: '60'
+default_value_callback: ''
+settings: {  }
+field_type: string

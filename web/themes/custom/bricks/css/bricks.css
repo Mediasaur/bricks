@@ -3,16 +3,6 @@ main {
   margin-bottom: 7.5rem;
 }
 
-.layout--threecol-section--33-34-33 .layout-region {
-  -webkit-box-flex: 32%;
-      -ms-flex: 32%;
-          flex: 32%;
-}
-
-.layout--threecol-section--33-34-33 .layout-region-second {
-  margin: 0 2%;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -294,5 +284,63 @@ footer {
 
 .layout-text-content p:last-child {
   margin-bottom: 0;
+}
+
+.brick-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brick {
+  position: relative;
+}
+
+.brick:hover .brick-info {
+  opacity: 1;
+}
+
+.brick-info {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #888888;
+  border-radius: 1rem;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  width: 240px;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  color: #eee;
+}
+
+.brick-info:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #888888;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.brick-title:before, .brick-title:after {
+  content: '"';
+}
+
+.brick-photo img {
+  height: 100%;
+  width: auto;
 }
 /*# sourceMappingURL=bricks.css.map */

@@ -72,8 +72,7 @@ function bricks_preprocess_page(array &$variables) {
 
 function bricks_preprocess_breadcrumb(&$variables){
  
-  //$content_type = $node->bundle();
-  if(($node = \Drupal::routeMatch()->getParameter('node')) && $variables['breadcrumb']){
+  if(($node = \Drupal::routeMatch()->getParameter('node'))){
     // Remove 'Home' from breadcrumb:
     array_shift($variables['breadcrumb']);
     // Get content type to use breadcrumb.html.twig:

@@ -1,0 +1,36 @@
+uuid: e4a13f08-9a19-429f-90cc-76f6feaf9e5a
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access media overview'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'bypass node access'
+  - 'create media'
+  - 'create terms in tags'
+  - 'customize shortcut links'
+  - 'delete all revisions'
+  - 'delete any media'
+  - 'delete media'
+  - 'edit layout paragraphs plugin config'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'search content'
+  - 'update any media'
+  - 'update media'
+  - 'use advanced search'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view media'
+  - 'view own unpublished media'
+  - 'view the administration theme'

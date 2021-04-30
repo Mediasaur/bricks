@@ -1,0 +1,8 @@
+ {% block paragraph %}
+  {% block content %}
+    <div class="brick-event" data-brick-height="{{content.field_brick_height.0 }}">
+      <div class="brick-event-date">{{ content.field_brick_event_date }}</div>
+      <div class="brick-photos">{{ content.field_brick_photos }}</div>
+    </div>
+  {% endblock %}
+{% endblock paragraph %}

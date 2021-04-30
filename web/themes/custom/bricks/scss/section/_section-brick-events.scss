@@ -1,0 +1,55 @@
+.brick-photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brick {
+  position: relative;
+  &:hover {
+    .brick-info {
+      opacity: 1;
+    }
+  }
+}
+
+.brick-info {
+  position: absolute;
+  background: rgba(0,0,0,0.75);
+  border: 2px solid $gray-8;
+  border-radius: 1rem;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  width: 240px;
+  opacity: 0;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  color: #eee;
+  &:before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid $gray-8;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.brick-title {
+  &:before, &:after {
+    content: '"';
+  }
+}
+
+.brick-photo {
+  img {
+    height: 100%;
+    width: auto;
+  }
+}

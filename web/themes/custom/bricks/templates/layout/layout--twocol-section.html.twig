@@ -1,5 +1,5 @@
 {% if content %}
-  <div class="layout layout-threecol-section uk-child-width-1-3@m" uk-grid>
+  <div class="layout layout-twocol-section uk-child-width-1-2@m" uk-grid>
 
     {% if content.first %}
       <div {{ region_attributes.first.addClass('layout-region') }}>
@@ -10,12 +10,6 @@
     {% if content.second %}
       <div {{ region_attributes.second.addClass('layout-region') }}>
         {{ content.second }}
-      </div>
-    {% endif %}
-
-    {% if content.third %}
-      <div {{ region_attributes.third.addClass('layout-region') }}>
-        {{ content.third }}
       </div>
     {% endif %}
 

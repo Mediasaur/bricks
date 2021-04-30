@@ -6,7 +6,7 @@ dependencies:
     - field.field.media.brick_photo.field_brick_artist
     - field.field.media.brick_photo.field_brick_title
     - field.field.media.brick_photo.field_media_image
-    - image.style.large
+    - image.style.brick_thumbnail
     - media.type.brick_photo
   module:
     - image
@@ -35,7 +35,7 @@ content:
     label: visually_hidden
     weight: 0
     settings:
-      image_style: large
+      image_style: brick_thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image

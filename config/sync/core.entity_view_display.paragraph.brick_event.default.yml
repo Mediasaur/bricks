@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.brick_event.field_brick_event_date
+    - field.field.paragraph.brick_event.field_brick_height
     - field.field.paragraph.brick_event.field_brick_photos
     - paragraphs.paragraphs_type.brick_event
   module:
@@ -14,7 +15,7 @@ bundle: brick_event
 mode: default
 content:
   field_brick_event_date:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       format_type: medium
@@ -22,9 +23,17 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_brick_height:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_brick_photos:
     type: entity_reference_entity_view
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       view_mode: default

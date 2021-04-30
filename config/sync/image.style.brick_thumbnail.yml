@@ -1,0 +1,15 @@
+uuid: b65137ba-463a-4729-b10e-2f124d7b552a
+langcode: en
+status: true
+dependencies: {  }
+name: brick_thumbnail
+label: 'Brick Thumbnail'
+effects:
+  32f9a887-c44a-4a4b-b0db-9b95dbb63d71:
+    uuid: 32f9a887-c44a-4a4b-b0db-9b95dbb63d71
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: null
+      upscale: false
