@@ -1,8 +1,18 @@
  {% block paragraph %}
   {% block content %}
-    <div class="brick-event" data-brick-height="{{content.field_brick_height.0 }}">
-      <div class="brick-event-date">{{ content.field_brick_event_date }}</div>
+    {% if content|render %}
+    {# {{ kint(paragraph) }} #}
+    <div id="brick-event-{{ paragraph.id.value }}" class="brick-event" data-brick-height="{{content.field_brick_height.0 }}">
+      <div class="brick-event-header">
+        <div class="brick-event-date">{{ content.field_brick_event_date }}</div>
+        <div class="next-prev-events">
+          <a href="#" class="prev-event">Previous Event</a>
+          <span class="separator">-</span>
+          <a href="#" class="next-event">Next Event</a>
+        </div>
+      </div>
       <div class="brick-photos">{{ content.field_brick_photos }}</div>
     </div>
+    {% endif %}
   {% endblock %}
 {% endblock paragraph %}

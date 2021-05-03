@@ -13,9 +13,14 @@
       </div>
     </div>
   </section>
+  {% if content.field_brick_events[1]|render|striptags is not empty %}
   <section class="section-brick-events">
-    <div class="uk-container">{{ content.field_brick_events }}</div>
+    <div class="uk-container">
+      <div class="brick-event-menu">{{ brick_events_menu }}</div>
+      {{ content.field_brick_events }}
+    </div>
   </section>
+  {% endif %}
   <section class="section-project-content">
     <div class="uk-container">
       {{ content.field_project_content }}

@@ -15,6 +15,7 @@ dependencies:
   module:
     - layout_paragraphs
     - media_library
+    - media_library_edit
     - paragraphs
     - path
     - text
@@ -86,7 +87,9 @@ content:
     weight: 11
     settings:
       media_types: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
     region: content
   field_project_subtitle:
     weight: 8

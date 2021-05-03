@@ -1,6 +1,48 @@
+.section-brick-events {
+  padding: 7.5rem 0;
+}
+
+.brick-event {
+	margin-bottom: 6rem;
+}
+
+.brick-event-header {
+	border-bottom: 1px dashed $gray-3;
+	margin-bottom: 3rem;
+	padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brick-event-date {
+	font-size: 1.8rem;
+}
+
+.next-prev-events {
+  a {
+    color: $gray-3;
+    &:hover {
+      color: $red;
+      opacity: 0.75;
+    }
+  }
+  span {
+    color: $gray-2;
+  }
+}
+
+.brick-event:nth-child(2) .prev-event, .brick-event:nth-child(2) .separator {
+  display: none !important;
+}
+
+.brick-event:last-child .next-event, .brick-event:last-child .separator {
+  display: none !important;
+}
+
 .brick-photos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .brick {
@@ -51,5 +93,50 @@
   img {
     height: 100%;
     width: auto;
+  }
+}
+
+
+
+.brick-event-menu {
+	display: flex;
+  margin-bottom: 3rem;
+}
+
+.brick-event-menu a {
+	background: $gray-2;
+  color: $gray-4;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  padding: 0 0 0 1.5rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem;
+  &:hover {
+    background: $red;
+    color: $white;
+    opacity: 0.75;
+    svg {
+      opacity: 0.25;
+      background: $gray-2;
+      polyline {
+        stroke:$white !important;
+      }
+    }
+  }
+  svg {
+    width: 3rem;
+    height: 3rem;
+    background: $gray-3;
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin-left: 1.5rem;
+    padding: 0 0.5rem;
+    polyline {
+      stroke:$gray-6 !important;
+      stroke-width: 2px;
+    }
+    
   }
 }

@@ -1,0 +1,8 @@
+uuid: b31548bb-4562-4231-b61b-47c2aa21f454
+langcode: en
+status: true
+dependencies: {  }
+id: brick_event
+label: 'Brick Event'
+locked: false
+pattern: 'l tS F Y'

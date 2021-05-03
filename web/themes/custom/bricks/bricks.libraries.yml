@@ -11,7 +11,7 @@ global-scripts:
     js/uikit.min.js: {}
     js/uikit-icons.min.js: {}
     js/bricks.js: {}
-  #dependencies:
-    #- core/drupal
-    #- core/drupalSettings
-    #- core/jquery
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery

@@ -1,7 +1,13 @@
 <div class="brick">
+  {% if content.field_brick_title|render or content.field_brick_artist|render %}
   <div class="brick-info">
+    {% if content.field_brick_title|render %}
     <div class="brick-title">{{ content.field_brick_title }}</div>
+    {% endif %}
+    {% if content.field_brick_artist|render %}
     <div class="brick-artist">{{ content.field_brick_artist }}</div>
+    {% endif %}
   </div>
+  {% endif %}
   <div class="brick-photo">{{ content.field_media_image }}</div>
 </div>
