@@ -1,0 +1,39 @@
+uuid: 3047fc40-a269-4866-a137-1b8b9c717710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.brick_media.field_brick_media_content
+    - field.field.node.brick_media.field_brick_media_description
+    - node.type.brick_media
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.brick_media.default
+targetEntityType: node
+bundle: brick_media
+mode: default
+content:
+  field_brick_media_content:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_brick_media_description:
+    weight: 102
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

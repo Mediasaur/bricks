@@ -25,6 +25,7 @@ main {
 
 html {
   font-size: 10px;
+  line-height: 1.4;
   scroll-behavior: smooth;
 }
 
@@ -51,7 +52,7 @@ h1 {
 }
 
 a {
-  color: #dd0202;
+  color: #c00;
   text-decoration: none;
 }
 
@@ -77,6 +78,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  height: 12rem;
   z-index: 100;
 }
 
@@ -301,8 +303,60 @@ footer {
   margin-bottom: 0;
 }
 
-.section-brick-events {
-  padding: 7.5rem 0;
+.brick-event-menu-wrapper {
+  background: rgba(34, 34, 34, 0.9);
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12rem;
+  z-index: 100;
+}
+
+.brick-event-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brick-event-menu a {
+  background: #222222;
+  color: #444444;
+  line-height: 1;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem 1.75rem 1.5rem;
+  display: block;
+  margin: 1.5rem 1.5rem 0 0;
+  position: relative;
+}
+
+.brick-event-menu a:hover {
+  background: #c00;
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.brick-event-menu a:hover svg polyline {
+  stroke: #ffffff !important;
+}
+
+.brick-event-menu a svg {
+  position: absolute;
+  left: 50%;
+  bottom: 0.15rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.brick-event-menu a svg polyline {
+  stroke: #444444 !important;
+  stroke-width: 2px;
 }
 
 .brick-event {
@@ -330,7 +384,7 @@ footer {
 }
 
 .next-prev-events a:hover {
-  color: #dd0202;
+  color: #c00;
   opacity: 0.75;
 }
 
@@ -338,7 +392,7 @@ footer {
   color: #222222;
 }
 
-.brick-event:nth-child(2) .prev-event, .brick-event:nth-child(2) .separator {
+.brick-event:first-child .prev-event, .brick-event:first-child .separator {
   display: none !important;
 }
 
@@ -407,58 +461,88 @@ footer {
   width: auto;
 }
 
-.brick-event-menu {
+.section-media {
+  margin-top: 7.5rem;
+}
+
+.media-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
-.brick-event-menu a {
-  background: #222222;
-  color: #444444;
-  font-size: 1.6rem;
-  border-radius: 0.5rem;
-  padding: 0 0 0 1.5rem;
-  height: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 3rem;
+.media-item-content {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
 }
 
-.brick-event-menu a:hover {
-  background: #dd0202;
-  color: #ffffff;
-  opacity: 0.75;
+.media-item-content .video {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
 }
 
-.brick-event-menu a:hover svg {
-  opacity: 0.25;
-  background: #222222;
+.media-item-content .video iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.brick-event-menu a:hover svg polyline {
-  stroke: #ffffff !important;
+.media-item-content .image {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
 }
 
-.brick-event-menu a svg {
-  width: 3rem;
-  height: 3rem;
-  background: #333333;
-  border-radius: 0 0.5rem 0.5rem 0;
-  margin-left: 1.5rem;
-  padding: 0 0.5rem;
+.media-item-content .image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.brick-event-menu a svg polyline {
-  stroke: #666666 !important;
-  stroke-width: 2px;
+.media-item-content .embed {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.media-item-content .embed iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.media-item-description {
+  background: #000000;
+  padding: 1.2rem;
+  border-top: 0.6rem solid #c00;
+  font-size: 1.4rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+.media-item-description p {
+  margin: 0;
 }
 /*# sourceMappingURL=bricks.css.map */

@@ -1,3 +1,9 @@
+{% block content %}
 <article{{ attributes }}>
-  {{ content }}
+  <section class="section-content">
+    <div class="uk-container">
+    {{ content }}
+    </div>
+  </section>
 </article>
+{% endblock %}

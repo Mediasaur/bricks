@@ -9,11 +9,12 @@
 
 html {
   font-size: 10px;
+  line-height: 1.4;
   scroll-behavior: smooth;
 }
 
 body {
-  background: $black;
+  background: $gray-1;
   margin: 0;
   color: $gray-8;
   font-family: Montserrat;
@@ -59,3 +60,4 @@ ol, ul {
 @import "section/section-project-header";
 @import "section/section-project-content";
 @import "section/section-brick-events";
+@import "section/section-media";

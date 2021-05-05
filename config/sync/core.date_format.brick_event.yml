@@ -5,4 +5,4 @@ dependencies: {  }
 id: brick_event
 label: 'Brick Event'
 locked: false
-pattern: 'l tS F Y'
+pattern: 'l jS F Y'

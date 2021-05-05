@@ -1,0 +1,22 @@
+uuid: f37ca7e4-9b8d-4d76-a6d5-33d768b9d97c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.brick_media
+id: node.brick_media.promote
+field_name: promote
+entity_type: node
+bundle: brick_media
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: 2c173c3d-1592-43ab-ab71-145afbd71bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.brick_media.field_brick_media_content
+    - field.field.node.brick_media.field_brick_media_description
+    - node.type.brick_media
+  module:
+    - user
+id: node.brick_media.teaser
+targetEntityType: node
+bundle: brick_media
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_brick_media_content: true
+  field_brick_media_description: true

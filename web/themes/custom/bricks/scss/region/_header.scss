@@ -3,6 +3,7 @@ header {
   padding: 15px 0;
   position: sticky;
   top: 0;
+  height: 12rem;
   z-index: 100;
 }
 
@@ -40,7 +41,7 @@ header {
     opacity: 0.85;
     display: inline-block;
     &:hover {
-      color: $black;
+      color: $gray-1;
       opacity: 0.5;
     }
   }

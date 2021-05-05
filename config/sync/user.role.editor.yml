@@ -29,6 +29,7 @@ permissions:
   - 'update any media'
   - 'update media'
   - 'use advanced search'
+  - 'use text format code_embed'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view media'
