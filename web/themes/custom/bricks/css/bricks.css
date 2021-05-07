@@ -20,16 +20,21 @@ main {
   margin-bottom: 0;
 }
 
+.layout:last-child .layout-region .paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .layout .paragraph {
   margin-bottom: 3rem;
 }
 
-.layout .text p:last-child {
-  margin-bottom: 0;
+.layout .paragraph:not(.image) {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-.layout .document {
-  margin: 0 5rem;
+.layout .text p:last-child {
+  margin-bottom: 0;
 }
 
 * {
