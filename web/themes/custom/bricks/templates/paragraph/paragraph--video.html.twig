@@ -1,6 +1,12 @@
+{%
+  set classes = [
+    'video',
+    'paragraph'
+  ]
+%}
 {% block paragraph %}
   {% block content %}
-    <div class="video">
+    <div{{ attributes.addClass(classes) }}>
       {{ content }}
     </div>
   {% endblock %}

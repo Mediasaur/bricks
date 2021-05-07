@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.layout_section
     - paragraphs.paragraphs_type.text
     - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 id: node.brick_project.field_project_content
@@ -30,9 +31,16 @@ settings:
       layout_section: layout_section
       text: text
       video: video
+      webform: webform
     target_bundles_drag_drop:
       brick_event:
         weight: 6
+        enabled: false
+      document:
+        weight: 10
+        enabled: false
+      embed:
+        weight: 11
         enabled: false
       image:
         enabled: true
@@ -46,4 +54,7 @@ settings:
       video:
         enabled: true
         weight: 10
+      webform:
+        enabled: true
+        weight: 16
 field_type: entity_reference_revisions

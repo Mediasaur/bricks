@@ -17,7 +17,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -26,11 +26,19 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    weight: 1
+    region: content
+  name:
+    type: string_textfield
     weight: 0
     region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -38,12 +46,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 100
+    weight: 5
     region: content
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -51,5 +59,4 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden:
-  name: true
+hidden: {  }

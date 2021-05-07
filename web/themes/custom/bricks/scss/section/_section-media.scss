@@ -65,3 +65,70 @@
     margin: 0;
   }
 }
+
+
+// TESTIMONIALS
+
+.testimonials {
+  
+    background-image: linear-gradient($gray-2 33%, rgba(255,255,255,0) 0%);
+    background-size: 1px 9px;
+    background-position: right;
+    background-repeat: repeat-y;
+
+  padding-right: 3rem;
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 16rem;
+    left: -20rem;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    opacity: 0.25;
+  }
+}
+.testimonial {
+  margin-bottom: 3rem;
+  .title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  .statement {
+    font-size: 1.4rem;
+    color: $gray-8;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    position: relative;
+    p {
+      margin-bottom: 1rem;
+    }
+    .uk-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      svg {
+        width: 100rem;
+        color: $gray-4;
+        opacity: 0.25;
+      }
+    }
+  }
+  .name-role {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: $gray-4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    svg {
+      width: 1.4rem;
+      margin-right: 1rem;
+      circle, path {
+        stroke-width: 1.8;
+      }
+    }
+  }
+}

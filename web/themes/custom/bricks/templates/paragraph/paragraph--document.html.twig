@@ -1,0 +1,13 @@
+{%
+  set classes = [
+    'document',
+    'paragraph'
+  ]
+%}
+{% block paragraph %}
+  {% block content %}
+    <div{{ attributes.addClass(classes) }}>
+      <a href="{{ file_url(content.field_document[0]['#media'].field_media_document[0].entity.uri.value) }}" class="button">{{ content.field_document[0]['#media'].name.value }}</a>
+    </div>
+  {% endblock %}
+{% endblock paragraph %}

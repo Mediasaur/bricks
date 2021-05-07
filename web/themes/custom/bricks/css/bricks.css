@@ -16,6 +16,22 @@ main {
   padding-left: 3rem;
 }
 
+.layout:last-child {
+  margin-bottom: 0;
+}
+
+.layout .paragraph {
+  margin-bottom: 3rem;
+}
+
+.layout .text p:last-child {
+  margin-bottom: 0;
+}
+
+.layout .document {
+  margin: 0 5rem;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -51,6 +67,10 @@ h1 {
   text-transform: uppercase;
 }
 
+p {
+  margin-bottom: 1.5rem;
+}
+
 a {
   color: #c00;
   text-decoration: none;
@@ -59,6 +79,27 @@ a {
 a:hover {
   color: #990000;
   text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background: #c00;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: Montserrat;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #990000;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 img {
@@ -283,24 +324,16 @@ footer {
   text-align: justify;
 }
 
+.section-content {
+  margin-top: 7.5rem;
+}
+
+.section-custom-layouts {
+  margin-top: 7.5rem;
+}
+
 .section-project-content {
   padding-top: 7.5rem;
-}
-
-.section-project-content .layout {
-  margin-bottom: 3rem;
-}
-
-.section-project-content .layout:last-child {
-  margin-bottom: 0;
-}
-
-.layout-text-content {
-  margin: 0 5%;
-}
-
-.layout-text-content p:last-child {
-  margin-bottom: 0;
 }
 
 .brick-event-menu-wrapper {
@@ -544,5 +577,171 @@ footer {
 
 .media-item-description p {
   margin: 0;
+}
+
+.testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #222222), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#222222 33%, rgba(255, 255, 255, 0) 0%);
+  background-size: 1px 9px;
+  background-position: right;
+  background-repeat: repeat-y;
+  padding-right: 3rem;
+  position: relative;
+}
+
+.testimonials h2 {
+  position: absolute;
+  top: 16rem;
+  left: -20rem;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 0.25;
+}
+
+.testimonial {
+  margin-bottom: 3rem;
+}
+
+.testimonial .title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.testimonial .statement {
+  font-size: 1.4rem;
+  color: #888888;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.testimonial .statement p {
+  margin-bottom: 1rem;
+}
+
+.testimonial .statement .uk-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.testimonial .statement .uk-icon svg {
+  width: 100rem;
+  color: #444444;
+  opacity: 0.25;
+}
+
+.testimonial .name-role {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.testimonial .name-role svg {
+  width: 1.4rem;
+  margin-right: 1rem;
+}
+
+.testimonial .name-role svg circle, .testimonial .name-role svg path {
+  stroke-width: 1.8;
+}
+
+.webform-submission-contact-form-block-form {
+  max-width: 49%;
+}
+
+.webform-submission-contact-form-block-form .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.5rem;
+  font-family: Montserrat;
+  font-size: 1.6rem;
+}
+
+.webform-submission-contact-form-block-form .form-item label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.webform-submission-contact-form-block-form .form-item label.form-required:after {
+  content: "*";
+  margin-left: 0.25rem;
+}
+
+.webform-submission-contact-form-block-form .form-item input {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.webform-submission-contact-form-block-form .form-item input, .webform-submission-contact-form-block-form .form-item textarea {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  padding: 0.5rem;
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+}
+
+.webform-submission-contact-form-block-form .form-item input.error, .webform-submission-contact-form-block-form .form-item textarea.error {
+  outline: 2px solid #c00;
+}
+
+.webform-submission-contact-form-block-form .form-item div {
+  width: 100%;
+}
+
+.webform-submission-contact-form-block-form .form-item textarea {
+  resize: none;
+}
+
+.webform-submission-contact-form-block-form div[data-drupal-messages] {
+  color: #c00;
+  font-size: 1.4rem;
+}
+
+.webform-submission-contact-form-block-form div[data-drupal-messages] ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.layout-twocol-section .webform-submission-contact-form-block-form {
+  max-width: 100%;
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.halign-center {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=bricks.css.map */

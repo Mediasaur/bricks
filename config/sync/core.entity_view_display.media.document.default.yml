@@ -15,14 +15,22 @@ bundle: document
 mode: default
 content:
   field_media_document:
-    label: visually_hidden
-    settings: {  }
-    third_party_settings: {  }
     type: file_default
     weight: 1
     region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   created: true
-  name: true
   thumbnail: true
   uid: true

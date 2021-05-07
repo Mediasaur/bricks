@@ -1,11 +1,11 @@
 uuid: 33d00556-7d71-4ce0-93b4-20444c242026
 name: 'Bricks Project'
-mail: admin@example.com
+mail: mediasaur@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/14
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

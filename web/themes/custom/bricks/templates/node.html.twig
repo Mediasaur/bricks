@@ -1,9 +1,11 @@
 {% block content %}
-<article{{ attributes }}>
-  <section class="section-content">
-    <div class="uk-container">
-    {{ content }}
-    </div>
-  </section>
-</article>
+  {% if content.body|render|striptags is not empty %}
+    <article{{ attributes }}>
+      <section class="section-content">
+        <div class="uk-container">
+        {{ content.body }}
+        </div>
+      </section>
+    </article>
+  {% endif %}
 {% endblock %}

@@ -1,0 +1,32 @@
+uuid: c14ca2c6-4054-4c34-bed7-cedad6904954
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.generic_page.body
+    - field.field.node.generic_page.field_custom_layouts
+    - node.type.generic_page
+  module:
+    - text
+    - user
+id: node.generic_page.teaser
+targetEntityType: node
+bundle: generic_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_custom_layouts: true

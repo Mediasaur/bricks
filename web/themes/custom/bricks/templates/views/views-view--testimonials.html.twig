@@ -1,0 +1,8 @@
+{% if rows -%}
+  <div class="testimonials uk-width-1-3@m">
+    <h2>Testimonials</h2>
+    {{ rows }}
+  </div>
+{% elseif empty -%}
+  {{ empty }}
+{% endif %}

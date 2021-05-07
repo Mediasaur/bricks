@@ -1,6 +1,12 @@
+{%
+  set classes = [
+    'text',
+    'paragraph'
+  ]
+%}
 {% block paragraph %}
   {% block content %}
-    <div class="layout-text-content">
+    <div{{ attributes.addClass(classes) }}>
       {{ content }}
     </div>
   {% endblock %}

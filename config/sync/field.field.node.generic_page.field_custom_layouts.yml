@@ -1,0 +1,64 @@
+uuid: e44bb713-46a5-4594-b564-a93e66cd8e71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_layouts
+    - node.type.generic_page
+    - paragraphs.paragraphs_type.document
+    - paragraphs.paragraphs_type.embed
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.layout_section
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.generic_page.field_custom_layouts
+field_name: field_custom_layouts
+entity_type: node
+bundle: generic_page
+label: 'Custom Layouts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      embed: embed
+      document: document
+      image: image
+      layout_section: layout_section
+      text: text
+      video: video
+      webform: webform
+    target_bundles_drag_drop:
+      brick_event:
+        weight: 7
+        enabled: false
+      document:
+        enabled: true
+        weight: 9
+      embed:
+        enabled: true
+        weight: 8
+      image:
+        enabled: true
+        weight: 9
+      layout_section:
+        enabled: true
+        weight: 10
+      text:
+        enabled: true
+        weight: 11
+      video:
+        enabled: true
+        weight: 12
+      webform:
+        enabled: true
+        weight: 16
+field_type: entity_reference_revisions

@@ -54,8 +54,7 @@ function bricks_preprocess_node(&$variables) {
   // Make Views block usable in node templates by typing view name; e.g. {{ brick_events_menu }}
   $variables['brick_events_menu'] = views_embed_view('brick_events_menu', 'block');
   $variables['brick_media_items'] = views_embed_view('brick_media_items', 'block');
-
-
+  $variables['testimonials'] = views_embed_view('testimonials', 'block');
 }
 
 /**
@@ -146,7 +145,7 @@ function bricks_theme_suggestions_node_alter(array &$suggestions, array $variabl
     // for "page" content type only
     // if ($content_type == 'page'){
 
-    if (in_array($content_type, array('webform','page'))) {
+    if (in_array($content_type, array('webform','generic_page'))) {
 
       $current_path = Drupal::service('path.current')->getPath();
       $alias = Drupal::service('path_alias.manager')->getAliasByPath($current_path);

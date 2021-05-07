@@ -14,3 +14,26 @@ main {
 .uk-grid > * {
   padding-left: 3rem;
 }
+
+.layout {
+  //margin-bottom: 3rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.layout .paragraph {
+  margin-bottom: 3rem;
+}
+
+.layout .text {
+  //margin-left: 5rem;
+  //margin-right: 5rem;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.layout .document {
+  margin: 0 5rem;
+}

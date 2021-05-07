@@ -1,0 +1,13 @@
+{%
+  set classes = [
+    'paragraph-webform',
+    'paragraph'
+  ]
+%}
+{% block paragraph %}
+  {% block content %}
+    <div{{ attributes.addClass(classes) }}>
+      {{ content }}
+    </div>
+  {% endblock %}
+{% endblock paragraph %}

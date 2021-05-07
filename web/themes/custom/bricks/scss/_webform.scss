@@ -1,0 +1,59 @@
+.webform-submission-contact-form-block-form {
+  max-width: 49%;
+  .form-item {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    label {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      &.form-required{
+        &:after {
+          content: "*";
+          margin-left: 0.25rem;
+        }
+      }
+    }
+    input {
+      display: inline-flex;
+    }
+    input, textarea {
+      display: inline-flex;
+      width: 100%;
+      padding: 0.5rem;
+      font-family: Montserrat;
+      font-size: 1.4rem;
+      margin: 0;
+      border-radius: 0;
+      border: 0;
+      &.error {
+        outline: 2px solid $red;
+      }
+    }
+    div {
+      width: 100%;
+    }
+    textarea {
+      resize: none;
+    }
+  }
+  div[data-drupal-messages] {
+    color: $red;
+    font-size: 1.4rem;
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.layout-twocol-section {
+  .webform-submission-contact-form-block-form {
+    max-width: 100%;
+    width: 100%;
+  }
+}
