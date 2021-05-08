@@ -1,0 +1,14 @@
+<li class="project-item">
+  <a href="{{ file_url(fields.view_node.content|striptags|trim) }}" class="project-item-link">
+    <div class="project-text">
+      <div class="project-item-title-wrapper">
+        <h2 class="project-item-title">{{ fields.title.content }}</h2>
+      </div>
+      <div class="project-item-info">
+        <div class="project-item-location">{{ fields.field_project_location.content }}</div>
+        <div class="project-item-date">{{ fields.field_project_date.content }}</div>
+      </div>
+    </div>
+    <img src="{{ file_url(fields.uri.content|striptags|trim) }}" alt="" class="project-item-image" uk-cover>
+  </a>
+</li>

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.brick_project.field_project_date
     - field.field.node.brick_project.field_project_description
     - field.field.node.brick_project.field_project_location
+    - field.field.node.brick_project.field_project_main_image
     - field.field.node.brick_project.field_project_slideshow
     - field.field.node.brick_project.field_project_subtitle
     - field.field.node.brick_project.field_project_type
@@ -31,6 +32,7 @@ hidden:
   field_project_date: true
   field_project_description: true
   field_project_location: true
+  field_project_main_image: true
   field_project_slideshow: true
   field_project_subtitle: true
   field_project_type: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.brick_project.field_project_date
     - field.field.node.brick_project.field_project_description
     - field.field.node.brick_project.field_project_location
+    - field.field.node.brick_project.field_project_main_image
     - field.field.node.brick_project.field_project_slideshow
     - field.field.node.brick_project.field_project_subtitle
     - field.field.node.brick_project.field_project_type
@@ -93,4 +94,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_project_main_image: true
