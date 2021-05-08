@@ -37,6 +37,9 @@ function bricks_preprocess_page(array &$variables) {
     ];
   }
 
+  // Make Views blocks usable in page templates by typing view name; e.g. {{ brick_events_menu }}
+  $variables['home_slider_block'] = views_embed_view('projects', 'home_slider_block');
+
 }
 
 /**
@@ -51,10 +54,12 @@ function bricks_preprocess_page(array &$variables) {
 
 function bricks_preprocess_node(&$variables) {
 
-  // Make Views block usable in node templates by typing view name; e.g. {{ brick_events_menu }}
+  // Make Views blocks usable in node templates by typing view name; e.g. {{ brick_events_menu }}
   $variables['brick_events_menu'] = views_embed_view('brick_events_menu', 'block');
   $variables['brick_media_items'] = views_embed_view('brick_media_items', 'block');
   $variables['testimonials'] = views_embed_view('testimonials', 'block');
+  $variables['projects_page_block'] = views_embed_view('projects', 'projects_page_block');
+  // $variables['home_slider_block'] = views_embed_view('projects', 'home_slider_block');
 }
 
 /**
@@ -110,7 +115,7 @@ function bricks_preprocess_breadcrumb(&$variables){
 
 
 /**
- * Implements hook_theme_suggestions_alter() for contact form container.
+ * Implements hook_theme_suggestions_alter() for container.
  * Source: https://www.drupal.org/forum/support/theme-development/2019-04-26/having-trouble-adding-theme-suggestions-for-container
  */
 function bricks_theme_suggestions_container_alter(array &$suggestions, array &$variables)
@@ -128,6 +133,24 @@ function bricks_theme_suggestions_container_alter(array &$suggestions, array &$v
   array_unshift($suggestions, 'container__' . $type . '__' . $name);
 }
 
+
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ * SOURCE: https://befused.com/drupal/page-template-content-type
+ */
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function bricks_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $suggestions[] = 'page__' . $node->bundle();
+  }
+}
+
+
+
+
 /**
  * SOURCE: https://www.lehelmatyus.com/1064/drupal-8-page-template-suggestion-by-path-alias
  * NOTES: I modified it for node instead of page and removed unnecesarry parts. I also corrected "path_alias.manager" part, it was "path.alias_manager" and giving error.
@@ -140,7 +163,6 @@ function bricks_theme_suggestions_container_alter(array &$suggestions, array &$v
 function bricks_theme_suggestions_node_alter(array &$suggestions, array $variables) {
   if ($node = Drupal::routeMatch()->getParameter('node')) {
     $content_type = $node->bundle();
-    $suggestions[] = 'page__'.$content_type;
 
     // for "page" content type only
     // if ($content_type == 'page'){

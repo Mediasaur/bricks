@@ -1,0 +1,16 @@
+{% block content %}
+<article{{ attributes }}>
+  <section class="section-projects">
+    <div class="uk-container">
+      {{ projects_page_block }}
+    </div>
+  </section>
+  {% if content.body|render|striptags is not empty %}
+    <section class="section-content">
+      <div class="uk-container">
+        {{ content.body }}
+      </div>
+    </section>
+  {% endif %}
+</article>
+{% endblock %}

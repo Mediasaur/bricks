@@ -1,0 +1,7 @@
+{% if rows -%}
+  <div class="projects">
+    {{ rows }}
+  </div>
+{% elseif empty -%}
+  {{ empty }}
+{% endif %}

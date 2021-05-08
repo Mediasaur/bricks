@@ -76,15 +76,17 @@ ol, ul {
   margin: 0;
   padding: 0;
 }
-
+@import "uikit-reset";
 @import "region/header";
 @import "region/footer";
-@import "section/section-page-title";
+@import "page-title";
 @import "section/section-project-header";
 @import "section/section-content";
 @import "section/section-custom-layouts";
 @import "section/section-project-content";
 @import "section/section-brick-events";
 @import "section/section-media";
-@import "_webform";
+@import "section/section-projects";
+@import "section/section-projects-slider";
+@import "webform";
 @import "custom-classes";

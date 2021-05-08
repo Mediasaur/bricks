@@ -1,0 +1,49 @@
+{% block header %}
+  {{ page.header }}
+{% endblock %}
+{% block projects_slider %}
+{% endblock %}
+{% block page_title %}
+  <div class="page-title">
+    <div class="uk-container">
+      <div class="uk-grid">
+        <div class="breadcrumb uk-width-1-2">{{ page.breadcrumb }}</div>
+        <div class="page-title-text uk-width-1-2"><h1>{{ node.title.value }}</h1></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{# {{ kint(page) }} #}
+{% block highlighted %}
+  <div class="highlighted">
+    <div class="uk-container">
+      <div class="uk-grid">
+       {{ page.highlighted }}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block help %}
+  <div class="help">
+    <div class="uk-container">
+      <div class="uk-grid">
+       {{ page.help }}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block main %}
+  <div class="main">
+    <div class="uk-container">
+      <div class="uk-grid">
+       <main role="main">
+        <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+        {{ page.content }}
+      </main>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}
+  {{ page.footer }}
+{% endblock %}

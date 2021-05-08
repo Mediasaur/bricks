@@ -1,0 +1,9 @@
+{% if rows -%}
+  <div tabindex="-1" uk-slideshow="autoplay: true; autoplay-interval: 1000; animation: slide;">
+    <ul class="uk-slideshow-items">
+      {{ rows }}
+    </ul>
+  </div>
+{% elseif empty -%}
+  {{ empty }}
+{% endif %}
