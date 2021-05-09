@@ -1,8 +1,11 @@
 {% if rows -%}
-  <div tabindex="-1" uk-slideshow="autoplay: true; autoplay-interval: 1000; animation: slide;">
+  <div uk-slideshow="autoplay: true; autoplay-interval: 1000; ratio: 9:3; animation: push">
     <ul class="uk-slideshow-items">
       {{ rows }}
     </ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    <ul class="uk-slideshow-nav uk-dotnav"></ul>
   </div>
 {% elseif empty -%}
   {{ empty }}

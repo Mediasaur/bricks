@@ -1,0 +1,15 @@
+uuid: 865691ca-b68c-434c-999b-abbb8491e81e
+langcode: en
+status: true
+dependencies: {  }
+name: projects_page_block
+label: 'Projects Page Block (720x540)'
+effects:
+  f3a056b4-6fdb-4818-9f97-13346cc1cede:
+    uuid: f3a056b4-6fdb-4818-9f97-13346cc1cede
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 540
+      anchor: center-center

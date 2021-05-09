@@ -9,6 +9,8 @@
         <div class="project-item-date">{{ fields.field_project_date.content }}</div>
       </div>
     </div>
-    <img src="{{ file_url(fields.uri.content|striptags|trim) }}" alt="" class="project-item-image" uk-cover>
+    {# Twig Tweak module is installed to be able to use "image_style" filter. #}
+    <img src="{{ file_url(fields.uri.content|striptags|trim|image_style('projects_home_slider')) }}" alt="" class="project-item-image" uk-cover>
+
   </a>
 </li>

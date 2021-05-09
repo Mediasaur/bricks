@@ -2,7 +2,27 @@
 
 /**
 * @file
-* Functions to support theming in the MACC theme.
+* Functions to support theming in the Bricks theme.
+*/
+
+
+
+/**
+* >> HTML PREPROCESS: Implements hook_preprocess_page().
+*/
+
+// Print 'path-frontpage to front page body element.
+// Source: https://www.drupal.org/forum/support/theme-development/2015-11-03/custom-body-class-for-d8-front-page#comment-10553412
+use Drupal\Component\Utility\Html;
+function bricks_preprocess_html(&$variables) {
+  $path_class = !$variables['root_path'] ? 'path-frontpage' : 'path-' . Html::getClass($variables['root_path']);
+  if (isset($path_class)) {
+    $variables['attributes']['class'][] = $path_class;
+  }
+}
+
+/**
+* << HTML PREPROCESS: Implements hook_preprocess_page().
 */
 
 

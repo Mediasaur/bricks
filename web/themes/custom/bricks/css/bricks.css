@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
+  margin: unset;
+  font-family: unset;
+  font-weight: unset;
+  color: unset;
+  text-transform: unset;
+}
+
 main[role="main"] {
   margin-bottom: 7.5rem;
 }
@@ -41,8 +49,6 @@ main[role="main"] {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 
 html {
@@ -66,11 +72,25 @@ h1 {
   border-right: 6px solid #c00;
   color: #888888;
   font-family: Montserrat;
-  font-size: 32px;
-  line-height: 48px;
-  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  font-weight: 600;
   text-align: right;
   text-transform: uppercase;
+}
+
+.path-frontpage h1 {
+  padding-right: unset;
+  border-right: unset;
+  border-bottom: 6px solid #c00;
+  color: #888888;
+  font-family: Montserrat;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 p {
@@ -80,6 +100,8 @@ p {
 a {
   color: #c00;
   text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 a:hover {
@@ -101,6 +123,8 @@ a:hover {
   border: 0;
   border-radius: 0.25rem;
   cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .button:hover {
@@ -116,14 +140,6 @@ img {
 ol, ul {
   margin: 0;
   padding: 0;
-}
-
-.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
-  margin: unset;
-  font-family: unset;
-  font-weight: unset;
-  color: unset;
-  text-transform: unset;
 }
 
 header {
@@ -529,22 +545,6 @@ footer {
           flex: 1 0;
 }
 
-.media-item-content .video {
-  width: 100%;
-  position: relative;
-  padding-top: 56.25%;
-}
-
-.media-item-content .video iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .media-item-content .image {
   width: 100%;
   position: relative;
@@ -689,6 +689,8 @@ footer {
 
 .section-projects .project-item {
   opacity: 0.8;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .section-projects .project-item:hover {
@@ -768,8 +770,10 @@ footer {
   text-transform: uppercase;
 }
 
-.projects-slider .project-item {
-  height: 75vh;
+.projects-slider:hover .project-text {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .projects-slider .project-item-link {
@@ -802,6 +806,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0.85;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .projects-slider .project-item-title-wrapper {
@@ -844,6 +851,67 @@ footer {
 
 .projects-slider .project-item-image {
   position: absolute;
+}
+
+.projects-slider .uk-slidenav svg {
+  width: 2.5rem;
+}
+
+.projects-slider .uk-slidenav svg polyline {
+  stroke-width: 0.25rem;
+  stroke: rgba(255, 255, 255, 0.75) !important;
+}
+
+.projects-slider .uk-slidenav:hover svg {
+  scale: 1.1;
+}
+
+.projects-slider .uk-slidenav:hover svg polyline {
+  stroke: white !important;
+}
+
+.projects-slider .uk-slideshow {
+  position: relative;
+}
+
+.projects-slider .uk-slideshow .uk-dotnav {
+  position: absolute;
+  z-index: 100;
+  bottom: 3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.projects-slider .uk-slideshow .uk-dotnav li a {
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.projects-slider .uk-slideshow .uk-dotnav li a:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.projects-slider .uk-slideshow .uk-dotnav li.uk-active a {
+  background: rgba(204, 0, 0, 0.5);
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .webform-submission-contact-form-block-form {

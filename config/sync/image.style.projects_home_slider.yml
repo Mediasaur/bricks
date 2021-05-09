@@ -1,0 +1,15 @@
+uuid: 974a51c8-235f-424c-aa53-c08c9b69e742
+langcode: en
+status: true
+dependencies: {  }
+name: projects_home_slider
+label: 'Projects Home Slider (1920×1080)'
+effects:
+  0d0c86af-61d6-430d-ad94-cf8e36e745d2:
+    uuid: 0d0c86af-61d6-430d-ad94-cf8e36e745d2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 768
+      anchor: center-center

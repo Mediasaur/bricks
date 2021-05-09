@@ -7,6 +7,7 @@
     <div class="project-item-title-wrapper">
       <h2 class="project-item-title">{{ fields.title.content }}</h2>
     </div>
-    <img src="{{ file_url(fields.uri.content|striptags|trim) }}" alt="" class="project-item-image">
+    {# Twig Tweak module is installed to be able to use "image_style" filter. #}
+    <img src="{{ file_url(fields.uri.content|striptags|trim|image_style('projects_page_block')) }}" alt="" class="project-item-image">
   </a>
 </div>
