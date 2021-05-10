@@ -29,14 +29,11 @@ main[role="main"] {
 
 .layout .paragraph {
   margin-bottom: 3rem;
-  &:not(.image) {
-    margin-left: 5rem;
-  margin-right: 5rem;
-    margin-right: 5rem;
-  }
 }
 
-.layout .text {
+.layout .text, .layout .paragraph-webform, .layout .document {
+  padding-left: 5rem;
+  padding-right: 5rem;
   p:last-child {
     margin-bottom: 0;
   }

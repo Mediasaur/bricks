@@ -118,3 +118,20 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .testimonials {
+    padding-right: 0;
+    background-image: none;
+    h2 {
+      display: none;
+    }
+  }
+  .testimonial {
+    .statement {
+      .uk-icon {
+        display: none;
+      }
+    }
+  }
+}

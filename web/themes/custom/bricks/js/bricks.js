@@ -25,5 +25,11 @@ jQuery(document).ready(function($) {
     $('html, body').animate({scrollTop: $('#'+target_event_id).offset().top -200 }, 'slow');
   })
 
+  // Mobile Menu
+  $('.menu-toggle').click(function() {
+    $('body').toggleClass('mm-active');
+    $('.mobile-menu').toggleClass('mm-active');
+    $(this).toggleClass('mm-active');
+  })
  
 });

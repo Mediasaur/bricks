@@ -6,9 +6,9 @@
 {% block page_title %}
   <div class="page-title">
     <div class="uk-container">
-      <div class="uk-grid">
-        <div class="breadcrumb uk-width-1-2">{{ page.breadcrumb }}</div>
-        <div class="page-title-text uk-width-1-2"><h1>{{ node.title.value }}</h1></div>
+      <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-2@m">
+        <div class="breadcrumb">{{ page.breadcrumb }}</div>
+        <div class="page-title-text"><h1>{{ node.title.value }}</h1></div>
       </div>
     </div>
   </div>
@@ -47,3 +47,7 @@
 {% block footer %}
   {{ page.footer }}
 {% endblock %}
+
+<div class="mobile-menu uk-hidden@m">
+  {{ bricks_main_menu }}
+</div>

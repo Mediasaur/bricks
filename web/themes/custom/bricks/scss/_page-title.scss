@@ -31,3 +31,18 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .breadcrumb {
+    margin-bottom: 1.5rem;
+  }
+  .page-title h1 {
+    line-height: 1.125;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .breadcrumb {
+    display: none;
+  }
+}

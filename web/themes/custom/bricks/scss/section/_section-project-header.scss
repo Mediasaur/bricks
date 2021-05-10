@@ -37,3 +37,17 @@
   width: 40%;
   text-align: justify;
 }
+
+@media screen and (max-width: 1200px) {
+  .project-header {
+    flex-direction: column;
+  }
+
+  .project-info, .project-slider, .project-description {
+    width: 100%;
+  }
+
+  .project-slider {
+    margin: 3rem 0;
+  }
+}

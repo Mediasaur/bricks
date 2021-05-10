@@ -112,3 +112,35 @@
 	}
 
 }
+
+@media screen and (max-width: 1200px) {
+
+	.projects-slider {
+		.uk-slideshow-items{
+			height: 50vw;
+		}
+		.project-item-link {
+			align-items: flex-end;
+		}
+		.project-item-title {
+			font-size: 6vw;
+		}
+		.project-text {
+			width: 100%;
+			.project-item-title-wrapper {
+				margin-bottom: 0;
+			}
+			.project-item-location, .project-item-date {
+				font-size: 3vw;
+			}
+		}
+		.uk-slidenav svg {
+			width: 3vw;
+		}
+		.uk-slideshow {
+			.uk-dotnav {
+				bottom: -3rem;
+			}
+		}
+	}
+}

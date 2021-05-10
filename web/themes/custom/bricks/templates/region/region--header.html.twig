@@ -3,7 +3,8 @@
       <a href="{{ path('<front>') }}" rel="home" class="bricks-logo">
         <img src="/{{ directory }}/images/bricks-logo.png" alt="Bricks Project"/>
       </a>
-      {{ bricks_main_menu }}
+      <div class="desktop-menu uk-visible@m">{{ bricks_main_menu }}</div>
+      <a href="#" class="menu-toggle uk-hidden@m" uk-icon="icon: menu"></a>
     </div>
   </header>
 

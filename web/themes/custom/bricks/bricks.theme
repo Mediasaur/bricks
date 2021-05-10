@@ -57,6 +57,14 @@ function bricks_preprocess_page(array &$variables) {
     ];
   }
 
+  // To be able to print blocks in pages using Twig:
+
+  // Main Menu block:
+  $block = \Drupal\block\Entity\Block::load('bricks_main_menu');
+  $variables['bricks_main_menu'] = \Drupal::entityTypeManager()
+    ->getViewBuilder('block')
+    ->view($block);
+
   // Make Views blocks usable in page templates by typing view name; e.g. {{ brick_events_menu }}
   $variables['home_slider_block'] = views_embed_view('projects', 'home_slider_block');
 
@@ -94,7 +102,7 @@ function bricks_preprocess_node(&$variables) {
 
 function bricks_preprocess_region(&$variables) {
   
-  // To be able to print blocks in Twig:
+  // To be able to print blocks in regions using Twig:
 
   // Main Menu block:
   $block = \Drupal\block\Entity\Block::load('bricks_main_menu');
