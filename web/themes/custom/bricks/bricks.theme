@@ -133,6 +133,7 @@ function bricks_preprocess_breadcrumb(&$variables){
     $variables['breadcrumb'][] = array(
      'text' => $node->getTitle()
    );
+   $variables['#cache']['contexts'][] = 'url';
   }
 }
 
