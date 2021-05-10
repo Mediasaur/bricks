@@ -358,6 +358,35 @@ footer {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container .copyright {
+    margin: 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .sm-links {
+    width: 100%;
+  }
+  .sm-links ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sm-links ul li {
+    max-width: 50%;
+  }
+}
+
 .page-title {
   background: #1f1f1f;
   padding: 2rem 0;

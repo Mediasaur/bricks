@@ -36,3 +36,26 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+	.footer-container {
+    flex-direction: column;
+    .copyright {
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+	.sm-links {
+    width: 100%;
+    ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        max-width: 50%;
+      }
+    }
+  }
+}
