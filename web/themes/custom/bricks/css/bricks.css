@@ -490,6 +490,53 @@ footer {
   width: 40%;
 }
 
+.project-slider .uk-slidenav svg {
+  width: 1.75rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.project-slider .uk-slidenav svg polyline {
+  stroke-width: 0.2rem;
+  stroke: rgba(255, 255, 255, 0.75) !important;
+}
+
+.project-slider .uk-slidenav:hover svg {
+  scale: 1.25;
+}
+
+.project-slider .uk-slidenav:hover svg polyline {
+  stroke: white !important;
+}
+
+.project-slider .uk-slideshow {
+  position: relative;
+}
+
+.project-slider .uk-slideshow .uk-dotnav {
+  position: absolute;
+  z-index: 100;
+  bottom: -3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.project-slider .uk-slideshow .uk-dotnav li a {
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.project-slider .uk-slideshow .uk-dotnav li a:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.project-slider .uk-slideshow .uk-dotnav li.uk-active a {
+  background: rgba(204, 0, 0, 0.5);
+}
+
 .project-description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,7 +559,7 @@ footer {
     width: 100%;
   }
   .project-slider {
-    margin: 3rem 0;
+    margin: 3rem 0 5rem 0;
   }
 }
 
@@ -1044,6 +1091,8 @@ footer {
 
 .projects-slider .uk-slidenav svg {
   width: 2.5rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .projects-slider .uk-slidenav svg polyline {

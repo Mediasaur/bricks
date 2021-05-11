@@ -29,6 +29,52 @@
 .project-slider {
   margin: 0 5%;
   width: 40%;
+
+  .uk-slidenav {
+		svg {
+			width: 1.75rem;
+      transition: $transition;
+			polyline {
+				stroke-width: 0.2rem;
+				stroke: rgba($white, 0.75) !important;
+			}
+		}
+		&:hover {
+			svg {
+				scale: 1.25;
+				polyline {
+					stroke: rgba($white, 1) !important;
+				}
+			}
+		}
+	}
+
+	.uk-slideshow {
+		position: relative;
+		.uk-dotnav {
+			position: absolute;
+			z-index: 100;
+			bottom: -3rem;
+			left: 50%;
+			transform: translateX(-50%);
+			li {
+				a {
+					background: rgba($white, 0.5);
+					border: 0;
+					width: 1.5rem;
+					height: 1.5rem;
+					&:hover {
+						background: rgba($white, 0.8);
+					}
+				}
+				&.uk-active {
+					a {
+						background: rgba($red, 0.5);
+					}
+				}
+			}
+		}
+	}
 }
 
 .project-description {
@@ -48,6 +94,6 @@
   }
 
   .project-slider {
-    margin: 3rem 0;
+    margin: 3rem 0 5rem 0;
   }
 }
